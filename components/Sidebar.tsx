@@ -15,6 +15,12 @@ function Sidebar() {
     const menuOptions = (
         <>
             <NewDocumentButton />
+
+            {/* My documents
+            List */}
+
+            {/* Shared with me
+            List */}
         </>
     );
 
@@ -25,8 +31,8 @@ function Sidebar() {
                 <SheetTrigger className="w-20"><Menu /></SheetTrigger>
                 <SheetContent side={"left"}>
                     <SheetHeader>
-                    <SheetTitle>Menu</SheetTitle>
-                    <div>
+                    <SheetTitle className="text-center">Menu</SheetTitle>
+                    <div className="text-center">
                         {menuOptions}
                     </div>
                     </SheetHeader>
